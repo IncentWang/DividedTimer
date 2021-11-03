@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DividedTimer</string>
+    <string name="empty_timer">没有活跃的定时器</string>
+    <string name="add_new_timer_request_name">定时器名称</string>
+    <string name="add_new_timer_plan_time">每周计划花费多久在这件事情上</string>
+    <string name="add_new_timer_name_hint">请输入定时器名称</string>>
+    <string name="add_new_timer_submit">提交</string>
+    <string name="timer_start_or_stop">暂停/开始</string>
+    <string name="timer_end">计时结束</string>
+</resources>
