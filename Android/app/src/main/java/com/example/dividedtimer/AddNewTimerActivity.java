@@ -33,10 +33,9 @@ public class AddNewTimerActivity extends AppCompatActivity {
     }
 
     public void addTimer(View view){
-        Intent intent = new Intent(this, MainActivity.class);
         EditText editText = findViewById(R.id.add_new_timer_name_field);
         NumberPicker np = findViewById(R.id.NP);
         dbManipulator.addTimer(editText.getText().toString(), np.getValue());
-        startActivity(intent);
+        this.finish();
     }
 }
