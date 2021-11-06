@@ -30,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         initAllTimers(db);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        initAllTimers(db);
+    }
+
     private void initAllTimers(SQLiteDatabase db){
         Cursor c = db.rawQuery("SELECT * FROM main_view;", null);
         if (c != null){
